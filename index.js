@@ -9,13 +9,13 @@ function convert(){
     if(toF.checked){
         temp = Number(textBox.value);
         temp = ((9/5) * temp) + 32;
-        result.textContent = parseFloat(temp.toFixed(2) + "°F");
+        result.textContent = parseFloat(temp.toFixed(2)) + "°F";
     }
 
     else if(toC.checked){
         temp = Number(textBox.value);
         temp = 5/9 * (temp - 32);
-        result.textContent = parseFloat(temp.toFixed(2) + "°C");
+        result.textContent = parseFloat(temp.toFixed(2)) + "°C";
     }
 
     else{
